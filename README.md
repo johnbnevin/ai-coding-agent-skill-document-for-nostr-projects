@@ -16,7 +16,26 @@ Published as an **nsite** (NIP-5A, kind `35128`) — served from Blossom, addres
 nsyte run naddr1qvzqqqyf8qpzqcwtxx596v0jjl3jfc2hjlpygqer8jamrjw4k7xmtvfnrndjfwc4qq9kummnw3ez6umtd9kxc200k7s
 ```
 
-The GitHub copy is a **mirror, not the source of truth**. If it disappears — and `references/libraries-and-tooling.md` explains at length why that's a live risk rather than a hypothetical — the nsite keeps resolving.
+The source is published over **ngit / NIP-34** (kind `30617` announcement + `30618` state), so the repo itself is addressed by keypair rather than by host:
+
+```bash
+git clone nostr://npub1v89nr2zax8ef0ceyu9te0sjyqv3newa3e82m0rd4kye3ekeyhv2sqf30cc/relay.ngit.dev/nostr-skill
+```
+
+Browse, file issues, and send PRs at **[gitworkshop.dev](https://gitworkshop.dev/npub1v89nr2zax8ef0ceyu9te0sjyqv3newa3e82m0rd4kye3ekeyhv2sqf30cc/relay.ngit.dev/nostr-skill)** — git collaboration without the platform.
+
+Git data is mirrored across **four independent hosts**:
+
+| Host | |
+|---|---|
+| `relay.ngit.dev` | GRASP |
+| `ngit.danconwaydev.com` | GRASP |
+| `gitnostr.com` | GRASP |
+| `github.com` | mirror |
+
+The GitHub copy is a **mirror, not the source of truth**. If it disappears — and `references/libraries-and-tooling.md` explains at length why that's a live risk rather than a hypothetical — three GRASP servers still serve the code, the nsite still serves the docs, and the announcement that ties them together is a signed event no host can revoke.
+
+That is the entire argument of this document, applied to itself.
 
 Written for AI coding agents (Claude Code, Cursor, Cline, and friends), and readable by humans. Every factual claim is checked against the live NIPs index rather than model memory, and dated.
 
