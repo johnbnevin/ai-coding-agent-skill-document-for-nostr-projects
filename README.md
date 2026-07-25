@@ -56,6 +56,14 @@ Factual errors: please open an issue or send a patch, ideally with the NIP or co
 
 Disagreements about the principles are a different conversation, and a legitimate one — but they're value disagreements, not bug reports.
 
+## License
+
+**[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)** — Attribution-ShareAlike 4.0 International. Full text in [`LICENSE`](LICENSE).
+
+Use it, fork it, paste it into your project, ship it inside a tool. Two conditions: credit the source, and if you distribute a modified version, license that under CC BY-SA 4.0 too so it stays open for the next person.
+
+Same licence Soapbox uses for [`nostr-skills`](https://gitlab.com/soapbox-pub/nostr-skills), chosen deliberately to match — a shared commons is more useful than a slightly more permissive one that can be enclosed.
+
 ## Credit
 
 Built on work given away for free by the people named in the Authorities section of `SKILL.md` — fiatjaf, hzrd149, mikedilger, hodlbod, dskvr, jeffg, vitorpamplona, alex gleason, greenart7c3, Silberengel, DanConwayDev, and many others. Attribution is cheap; a healthy commons is not.
