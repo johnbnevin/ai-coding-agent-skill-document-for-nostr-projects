@@ -45,6 +45,10 @@ footer{margin-top:3rem;padding-top:1.25rem;border-top:1px solid var(--line);
        color:var(--dim);font-size:.88rem}
 code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.9em;
      background:var(--code-bg);padding:.1em .35em;border-radius:3px}
+ul.credit{list-style:none;padding:0;margin:1.25rem 0}
+ul.credit li{padding:.4rem 0;border-bottom:1px solid var(--line);font-size:.95rem}
+ul.credit li:last-child{border-bottom:none}
+ul.credit b{font-weight:600}
 </style>
 </head>
 <body>
@@ -124,12 +128,55 @@ or on <a href="https://github.com/johnbnevin/ai-coding-agent-skill-document-for-
 <p>GitHub is a mirror, not the source of truth. If it disappears, three GRASP servers still serve
 the code and this site still resolves. That is the argument of the document, applied to itself.</p>
 
+<h2>Credit</h2>
+<p>Everything here describes work other people built and gave away for free. Attribution is
+cheap; a healthy commons is not. So, in full:</p>
+
+<ul class="credit">
+  <li><b>fiatjaf</b> — the protocol itself, <code>khatru</code>, <code>nak</code>, <code>nos2x</code>, <code>awesome-nostr</code></li>
+  <li><b>jb55 (Will Casarin)</b> — <code>damus</code>, <code>notedeck</code>, <code>nostril</code>, <code>nostr-js</code></li>
+  <li><b>hzrd149</b> — <code>blossom</code> and its BUDs, <code>applesauce</code>, <code>applesauce-concord</code>, <code>noStrudel</code>, the NIP-5A nsite spec</li>
+  <li><b>hodlbod</b> — <code>coracle</code>, <code>welshman</code>, and the relay-selection thinking most clients now borrow</li>
+  <li><b>mikedilger</b> — NIP-65 and the outbox model, <code>gossip</code>, <code>chorus</code>, relay-tester</li>
+  <li><b>jeffg (erskingardner)</b> — <code>marmot</code>, <code>whitenoise</code>, NIP-99</li>
+  <li><b>Max Hillebrand</b> — <code>whitenoise</code>, with jeffg</li>
+  <li><b>vitorpamplona</b> — <code>amethyst</code>, <code>quartz</code></li>
+  <li><b>alex gleason</b> — <code>nostrify</code>, <code>ditto</code>, <code>mkstack</code>, <code>shakespeare</code>, <code>nostrbook</code>, <code>soapbox</code>, and the <code>nostr-skills</code> this document's structure learns from</li>
+  <li><b>dskvr / sandwich</b> — <code>nostr-watch</code> and NIP-66, <code>nsyte</code>, <code>napplet</code> and NIP-5D, <code>cordn-adhoc-cvm</code>, and monitoring stations on six continents</li>
+  <li><b>hoytech (Doug Hoyte)</b> — <code>strfry</code>, and <code>negentropy</code>, which became NIP-77</li>
+  <li><b>greenart7c3</b> — <code>Amber</code> and NIP-55, <code>Citrine</code>, <code>Morganite</code></li>
+  <li><b>Silberengel / Laeserin</b> — <code>GitCitadel</code>, <code>Alexandria</code>, the NKBIPs</li>
+  <li><b>DanConwayDev</b> — <code>ngit</code>, NIP-34 tooling, <code>gitworkshop.dev</code></li>
+  <li><b>Pablof7z</b> — <code>NDK</code></li>
+  <li><b>purrgrammer</b> — <code>grimoire</code> and its nostr skill</li>
+  <li><b>derekross</b> — <code>nostrplebs</code>, <code>nostrnests</code>, <code>zappix</code>, <code>plektos</code>, <code>yakbak</code>, <code>zaptrax</code>, <code>zaplytics</code>, <code>podstr</code></li>
+  <li><b>bitkarrot</b> — <code>HiveTalk</code>, <code>swarm</code>, <code>sendsats</code></li>
+  <li><b>calle</b> — <code>Cashu</code>, underneath NIP-60 and NIP-61</li>
+  <li><b>franzap</b> — <code>zapstore</code></li>
+  <li><b>v0l / Kieran</b> — <code>snort</code>, <code>zap.stream</code>, <code>void.cat</code></li>
+  <li><b>rabble</b> — <code>nos.social</code></li>
+  <li><b>vcavallo</b> — <code>nstrfy.sh</code>, <code>attestr</code></li>
+  <li><b>MK Fain</b> — <code>MKStack</code></li>
+  <li><b>Nogringo</b> — Dart NDK, a privacy-focused relay, Dart NIP-77</li>
+  <li><b>KotlinGeekDev</b> — Kotlin Multiplatform completeness</li>
+  <li><b>Anderson Juhasc</b> — <code>Nostrord</code></li>
+  <li><b>Barry Deen</b> — <code>Wisp</code></li>
+  <li><b>YakiHonne</b> — client and Blossom server</li>
+  <li><b>gzuuus</b> — <code>dvmcp</code>, <code>nutoff-wallet</code></li>
+  <li><b>Jack Dorsey / Block</b> — <code>bitchat</code>, <code>Buzz</code>, and funding much of the above</li>
+  <li><b>Open Markets Foundation</b> — the NIP-99 / Gamma Markets commerce specs</li>
+  <li><b>Eric FJ</b> and <b>Sync</b> — the Open Markets Podcast</li>
+  <li><b>The Concord, Cordn, and ContextVM authors</b>, and everyone who has argued a NIP into shape in a pull request thread</li>
+</ul>
+
+<p>And <b>OpenSats</b>, which funds a large share of the people on this list.</p>
+
+<p style="color:var(--dim);font-size:.93rem">If you built something described here and aren't
+named, that's an error worth an issue — not a slight.</p>
+
 <footer>
   <p>CC BY-SA 4.0 — use it, fork it, ship it inside a tool. Credit the source, and keep modified
   versions open.</p>
-  <p>Built on work given away for free by fiatjaf, hzrd149, hodlbod, mikedilger, dskvr, jeffg,
-  vitorpamplona, alex gleason, greenart7c3, Silberengel, DanConwayDev, Pablof7z, hoytech, calle,
-  and many others — all named in full in the README.</p>
 </footer>
 
 </div>
