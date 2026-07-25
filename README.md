@@ -66,4 +66,43 @@ Same licence Soapbox uses for [`nostr-skills`](https://gitlab.com/soapbox-pub/no
 
 ## Credit
 
-Built on work given away for free by the people named in the Authorities section of `SKILL.md` — fiatjaf, hzrd149, mikedilger, hodlbod, dskvr, jeffg, vitorpamplona, alex gleason, greenart7c3, Silberengel, DanConwayDev, and many others. Attribution is cheap; a healthy commons is not.
+Everything here describes work other people built and gave away for free. Attribution is cheap; a healthy commons is not. So, in full:
+
+- **fiatjaf** — the protocol itself, `khatru`, `nak`, `nos2x`, `awesome-nostr`
+- **jb55 (Will Casarin)** — `damus`, `notedeck`, `nostril`, `nostr-js`
+- **hzrd149** — `blossom` and its BUDs, `applesauce`, `applesauce-concord`, `noStrudel`, the NIP-5A nsite spec
+- **hodlbod** — `coracle`, `welshman`, and the relay-selection thinking most clients now borrow
+- **mikedilger** — NIP-65 and the outbox model, `gossip`, `chorus`, relay-tester
+- **jeffg (erskingardner)** — `marmot`, `whitenoise`, NIP-99
+- **Max Hillebrand** — `whitenoise`, with jeffg
+- **vitorpamplona** — `amethyst`, `quartz`
+- **alex gleason** — `nostrify`, `ditto`, `mkstack`, `shakespeare`, `nostrbook`, `soapbox`, and the `nostr-skills` this document's structure learns from
+- **dskvr / sandwich** — `nostr-watch` and NIP-66, `nsyte`, `napplet` and NIP-5D, `cordn-adhoc-cvm`, and monitoring stations on six continents
+- **hoytech (Doug Hoyte)** — `strfry`, and `negentropy`, which became NIP-77
+- **greenart7c3** — `Amber` and NIP-55, `Citrine`, `Morganite`
+- **Silberengel / Laeserin** — `GitCitadel`, `Alexandria`, the NKBIPs
+- **DanConwayDev** — `ngit`, NIP-34 tooling, `gitworkshop.dev`
+- **Pablof7z** — `NDK`
+- **purrgrammer** — `grimoire` and its nostr skill
+- **derekross** — `nostrplebs`, `nostrnests`, `zappix`, `plektos`, `yakbak`, `zaptrax`, `zaplytics`, `podstr`
+- **bitkarrot** — `HiveTalk`, `swarm`, `sendsats`
+- **calle** — `Cashu`, underneath NIP-60 and NIP-61
+- **franzap** — `zapstore`
+- **v0l / Kieran** — `snort`, `zap.stream`, `void.cat`
+- **rabble** — `nos.social`
+- **vcavallo** — `nstrfy.sh`, `attestr`
+- **MK Fain** — `MKStack`
+- **Nogringo** — Dart NDK, a privacy-focused relay, Dart NIP-77
+- **KotlinGeekDev** — Kotlin Multiplatform completeness
+- **Anderson Juhasc** — `Nostrord`
+- **Barry Deen** — `Wisp`
+- **YakiHonne** — client and Blossom server
+- **gzuuus** — `dvmcp`, `nutoff-wallet`
+- **Jack Dorsey / Block** — `bitchat`, `Buzz`, and funding much of the above
+- **Open Markets Foundation** — the NIP-99 / Gamma Markets commerce specs
+- **Eric FJ** and **Sync** — the Open Markets Podcast
+- **The Concord, Cordn, and ContextVM authors**, and everyone who has argued a NIP into shape in a pull request thread
+
+And **OpenSats**, which funds a large share of the people on this list.
+
+If you built something described here and aren't named, that's an error worth an issue — not a slight.
