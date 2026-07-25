@@ -1,0 +1,16 @@
+# nsyte local deploy state — contains bunkerPubkey and machine-specific config
+.nsite/
+
+# never commit signing material
+*.nsec
+*.nbunksec
+*ncryptsec*
+.env
+.env.*
+secrets.json
+
+# os / editor
+.DS_Store
+*.swp
+.vscode/
+.idea/

@@ -4,6 +4,20 @@ A maintained agent skill for building on **Nostr** — protocol facts, current N
 
 > **1st draft by JBN.  Will maintain by asking clanker occasionally for landscape changes.**
 
+## Where this lives
+
+Published as an **nsite** (NIP-5A, kind `35128`) — served from Blossom, addressed by keypair, no DNS or hosting account involved. Any gateway resolves it:
+
+- **https://2fqvhgqm01dvbhf0lmla3ndj84lva52wn13nfayctcz6eog7pxnostr-skill.nsite.lol/**
+- `naddr1qvzqqqyf8qpzqcwtxx596v0jjl3jfc2hjlpygqer8jamrjw4k7xmtvfnrndjfwc4qq9kummnw3ez6umtd9kxc200k7s`
+- author `npub1v89nr2zax8ef0ceyu9te0sjyqv3newa3e82m0rd4kye3ekeyhv2sqf30cc`, identifier `nostr-skill`
+
+```bash
+nsyte run naddr1qvzqqqyf8qpzqcwtxx596v0jjl3jfc2hjlpygqer8jamrjw4k7xmtvfnrndjfwc4qq9kummnw3ez6umtd9kxc200k7s
+```
+
+The GitHub copy is a **mirror, not the source of truth**. If it disappears — and `references/libraries-and-tooling.md` explains at length why that's a live risk rather than a hypothetical — the nsite keeps resolving.
+
 Written for AI coding agents (Claude Code, Cursor, Cline, and friends), and readable by humans. Every factual claim is checked against the live NIPs index rather than model memory, and dated.
 
 ## Why this exists
