@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Agent Skill for NOstr Projects</title>
+<meta name="description" content="Feed me to your clanker">
+<style>
+:root{
+  --bg:#fbfaf7; --fg:#1a1a19; --dim:#6b6a65; --line:#e3e0d8;
+  --accent:#7a5c2e; --code-bg:#f2efe8; --card:#fff;
+}
+@media (prefers-color-scheme:dark){
+  :root{ --bg:#14140f; --fg:#e8e6df; --dim:#9a978d; --line:#2c2b24;
+         --accent:#d9b36c; --code-bg:#1e1d17; --card:#1a1913; }
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  background:var(--bg); color:var(--fg);
+  font:16px/1.65 ui-serif,Georgia,"Times New Roman",serif;
+  -webkit-text-size-adjust:100%;
+}
+.wrap{max-width:860px;margin:0 auto;padding:2.5rem 1.25rem 5rem}
+header{border-bottom:1px solid var(--line);padding-bottom:1.5rem;margin-bottom:1.75rem}
+h1{font-size:1.75rem;line-height:1.2;margin:0 0 .4rem}
+.tag{color:var(--dim);font-style:italic;margin:0 0 1rem}
+.note{
+  border-left:3px solid var(--accent);padding:.6rem 0 .6rem .9rem;
+  margin:1.25rem 0;color:var(--dim);font-size:.94rem
+}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent}
+a:hover{border-bottom-color:var(--accent)}
+ul.docs{list-style:none;padding:0;margin:1.5rem 0}
+ul.docs li{border-bottom:1px solid var(--line);padding:.85rem 0}
+ul.docs li:last-child{border-bottom:none}
+ul.docs a{font-weight:600;font-size:1.05rem}
+ul.docs .d{display:block;color:var(--dim);font-size:.9rem;margin-top:.15rem}
+.meta{font:13px/1.6 ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--dim);
+      background:var(--code-bg);border:1px solid var(--line);border-radius:6px;
+      padding:.9rem 1rem;overflow-x:auto;margin:1rem 0}
+.meta div{white-space:nowrap}
+h2{font-size:1.15rem;margin:2.25rem 0 .5rem;letter-spacing:.01em}
+footer{margin-top:3rem;padding-top:1.25rem;border-top:1px solid var(--line);
+       color:var(--dim);font-size:.88rem}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.9em;
+     background:var(--code-bg);padding:.1em .35em;border-radius:3px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>AI Agent Skill for NOstr Projects</h1>
+  <p class="tag">Feed me to your clanker</p>
+  <p style="margin:0;color:var(--dim);font-size:.95rem">
+    1st draft by JBN. Will maintain by asking clanker occasionally for landscape changes.
+  </p>
+</header>
+
+<p>An agent skill for building on <strong>Nostr</strong> — protocol facts, current NIP status,
+deprecations, relay strategy, messaging, commerce, tooling, and a set of stated principles for
+the judgment calls that specs don't settle.</p>
+
+<p>Written for AI coding agents and readable by humans. Every factual claim is checked against
+the live NIPs index rather than model memory, and dated.</p>
+
+<div class="note">
+Most Nostr material an agent has absorbed is out of date. NIP-04 is deprecated, NIP-96 was
+replaced by Blossom, nsites moved off kind <code>34128</code>, NIP-15 lost to NIP-99, and the
+commonly published kind-range table is wrong in a way that matters. This document exists to
+correct that, and to be corrected in turn.
+</div>
+
+<h2>Read</h2>
+<p style="color:var(--dim);font-size:.93rem;margin-top:-.25rem">
+Start with <code>SKILL.md</code> — it routes you to the rest. Files are served as raw markdown,
+which is what an agent wants; point yours straight at these URLs.
+</p>
+
+<ul class="docs">
+  <li><a href="./SKILL.md">SKILL.md</a>
+      <span class="d">The router. Authorities, cypherpunk defaults, judgment calls, MCP tools, unrecommended NIPs, kind selection, what's still evolving.</span></li>
+  <li><a href="./references/protocol.md">references/protocol.md</a>
+      <span class="d">NIP-01: exact kind ranges, event IDs, tag discipline, filters, relay messages.</span></li>
+  <li><a href="./references/identity-and-safety.md">references/identity-and-safety.md</a>
+      <span class="d">NIP-19, displaying people, NIP-05, moderation, deletion, onboarding and key safety.</span></li>
+  <li><a href="./references/lists-and-sets.md">references/lists-and-sets.md</a>
+      <span class="d">NIP-51 — read before inventing a kind.</span></li>
+  <li><a href="./references/relays.md">references/relays.md</a>
+      <span class="d">Relay types, NIP-11 limits, outbox model, Welshman, backoff, being a good citizen.</span></li>
+  <li><a href="./references/messaging.md">references/messaging.md</a>
+      <span class="d">NIP-17, Marmot, Cordn, Concord, NIP-29, ContextVM.</span></li>
+  <li><a href="./references/storage-and-sites.md">references/storage-and-sites.md</a>
+      <span class="d">Blossom, nsites (NIP-5A), napplets (NIP-5D).</span></li>
+  <li><a href="./references/commerce-and-content.md">references/commerce-and-content.md</a>
+      <span class="d">NIP-99, payments, ecash, long-form and publications.</span></li>
+  <li><a href="./references/libraries-and-tooling.md">references/libraries-and-tooling.md</a>
+      <span class="d">Libraries by language, signing, Soapbox/Ditto toolchain, ngit, Buzz.</span></li>
+  <li><a href="./references/sources.md">references/sources.md</a>
+      <span class="d">Other published agent skills, their known errors, and the link index.</span></li>
+  <li><a href="./README.md">README.md</a>
+      <span class="d">Overview, authority order, full credits.</span></li>
+  <li><a href="./LICENSE">LICENSE</a>
+      <span class="d">CC BY-SA 4.0.</span></li>
+</ul>
+
+<h2>Where this lives</h2>
+<p>This page is an <strong>nsite</strong> — NIP-5A, kind <code>35128</code>. Files live on Blossom,
+addressed by keypair. No DNS registrar, no hosting account, no single server to seize.</p>
+
+<div class="meta">
+  <div>clone  git clone nostr://npub1v89nr2zax8ef0ceyu9te0sjyqv3newa3e82m0rd4kye3ekeyhv2sqf30cc/relay.ngit.dev/nostr-skill</div>
+  <div>npub   npub1v89nr2zax8ef0ceyu9te0sjyqv3newa3e82m0rd4kye3ekeyhv2sqf30cc</div>
+  <div>site   nostr-skill</div>
+</div>
+
+<p>Source is published over <strong>ngit / NIP-34</strong> and mirrored across four independent
+hosts — <code>relay.ngit.dev</code>, <code>gitnostr.com</code>, <code>ngit.danconwaydev.com</code>,
+and a GitHub mirror. Browse, file issues, and send PRs at
+<a href="https://gitworkshop.dev/npub1v89nr2zax8ef0ceyu9te0sjyqv3newa3e82m0rd4kye3ekeyhv2sqf30cc/relay.ngit.dev/nostr-skill">gitworkshop.dev</a>,
+or on <a href="https://github.com/johnbnevin/ai-coding-agent-skill-document-for-nostr-projects">GitHub</a>.</p>
+
+<p>GitHub is a mirror, not the source of truth. If it disappears, three GRASP servers still serve
+the code and this site still resolves. That is the argument of the document, applied to itself.</p>
+
+<footer>
+  <p>CC BY-SA 4.0 — use it, fork it, ship it inside a tool. Credit the source, and keep modified
+  versions open.</p>
+  <p>Built on work given away for free by fiatjaf, hzrd149, hodlbod, mikedilger, dskvr, jeffg,
+  vitorpamplona, alex gleason, greenart7c3, Silberengel, DanConwayDev, Pablof7z, hoytech, calle,
+  and many others — all named in full in the README.</p>
+</footer>
+
+</div>
+</body>
+</html>
