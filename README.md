@@ -1,3 +1,14 @@
+> **Notice**
+>
+> Due to Microsoft/GitHub's recent willingness to remove bitchat software at the
+> behest of Indian government pressure, GitHub is no longer the source for my
+> latest repositories.
+>
+> See **[git.jbnco.co](https://git.jbnco.co)** for my projects, now hosted on
+> Nostr ngit.
+
+---
+
 # AI Coding Agent Skill Document for Nostr Projects
 
 A maintained agent skill for building on **Nostr** — protocol facts, current NIP status, deprecations, relay strategy, messaging, commerce, tooling, and a set of stated principles for the judgment calls that specs don't settle.
